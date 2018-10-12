@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Finder</title>
+    </head>
+    <body>
+        <h1>Findings</h1>
+        <form>
+  <input type="text" name="query_string" placeholder="search" />
+  <input type="submit" value="Submit" />
+      </form>
+    {% for item in results %}
+      <b></b><br />
+        <p><i>{{item}}</i></p>
+    {% endfor %}
+    </body>
+</html>
